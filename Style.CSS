@@ -219,3 +219,150 @@ header {
 .icon-notification.active .dot {
   display: block;
 }
+.main-content {
+  max-width: 852px;
+  margin: auto;
+  padding: 125px 0 170px;
+}
+.main-content--slogan {
+  position: relative;
+}
+.main-content--slogan h1 {
+  max-width: 690px;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 120%;
+  color: #000000;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin: 0;
+}
+.main-content--slogan p {
+  color: #c2c9d1;
+  position: absolute;
+  right: -50px;
+  bottom: 0;
+  margin: 0;
+}
+.main-conten--options {
+  padding-top: 50px;
+  padding-bottom: 60px;
+  display: flex;
+  justify-content: space-between;
+}
+.option-card {
+  max-width: 400px;
+  width: 48%;
+  background-color: white;
+  border-radius: 24px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.option-image {
+  height: 240px;
+  position: relative;
+  width: calc(100% - 90px);
+  margin-left: 30px;
+}
+.option-image img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  object-fit: cover;
+  object-position: center;
+}
+.option-card hr {
+  max-width: 365px;
+  width: 90%;
+  background: #3f3d56;
+  margin: 0;
+}
+.option-description h4 {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  margin: 0;
+}
+.option-description p {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: rgba(0, 0, 0, 0.29);
+  margin: 0;
+}
+.option-description h4.crisis {
+  color: #f03738;
+}
+.option-description h4.ready {
+  color: #3e66fb;
+}
+.option-description {
+  padding: 24px;
+  max-width: 193px;
+  width: 70%;
+}
+.description-content {
+  position: relative;
+}
+.option-checkbox {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 64px;
+  height: 64px;
+}
+.option-checkbox input {
+  display: none;
+}
+.option-checkbox label {
+  display: block;
+  background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.75),
+      rgba(255, 255, 255, 0.75)
+    ),
+    #f03738;
+  height: 100%;
+  border-radius: 24px;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 0;
+  cursor: pointer;
+}
+.option-checkbox input:checked + label {
+  background: #3e66fb;
+  box-shadow: 0px 13px 31.85px rgba(62, 102, 251, 0.44);
+}
+.option-checkbox svg {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.option-checkbox input:checked + label svg {
+  display: block;
+}
+.btn-primary {
+  padding: 13px 64px 18px 16px;
+  background-color: #3e66fb;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+  border-radius: 100px;
+  border: none;
+  cursor: pointer;
+}
+.text-right {
+  text-align: right;
+}
