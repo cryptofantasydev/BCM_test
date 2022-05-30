@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&display=swap");
 body {
   margin: 0;
 }
@@ -18,6 +19,7 @@ header {
   border-radius: 12px;
   color: white;
   padding: 10px;
+  cursor: pointer;
 }
 .select-box {
   margin-right: 50px;
@@ -61,6 +63,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 
 .navbar a:hover,
@@ -177,7 +180,7 @@ header {
   height: 40px;
   position: relative;
   border-radius: 50%;
-  border: 2px solid red;
+  border: 2px solid black;
   display: block;
 }
 .avatar img {
@@ -199,6 +202,7 @@ header {
 .header-icon {
   padding: 27px;
   border-left: 2px solid #f0f0f1;
+  cursor: pointer;
 }
 .header-icon:last-of-type {
   border-right: 2px solid #f0f0f1;
@@ -351,7 +355,7 @@ header {
   display: block;
 }
 .btn-primary {
-  padding: 13px 64px 18px 16px;
+  padding: 13px 64px 13px 16px;
   background-color: #3e66fb;
   font-family: "Rubik";
   font-style: normal;
@@ -365,4 +369,125 @@ header {
 }
 .text-right {
   text-align: right;
+}
+
+.chart-main {
+  height: calc(100vh - 92px);
+  display: flex;
+}
+.panel-group {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: fit-content;
+  grid-column-gap: 35px;
+  margin: 0;
+  padding-top: 50px;
+  transform: translateX(calc(50% - 136px));
+}
+
+.panel-item {
+  cursor: pointer;
+  height: fit-content;
+}
+
+.panel-item {
+  transition: transform 0.3s;
+  opacity: 0.5;
+}
+.panel-item:hover,
+.panel-item.is--active {
+  opacity: 1;
+}
+.panel-item.panel-item--left-top:hover {
+  transform: translate(-10px, -10px);
+}
+.panel-item.panel-item--right-top:hover {
+  transform: translate(10px, -10px);
+}
+.panel-item.panel-item--left-bottom:hover {
+  transform: translate(-10px, 10px);
+}
+.panel-item.panel-item--right-bottom:hover {
+  transform: translate(10px, 10px);
+}
+.define-state {
+  width: 186px;
+  margin-left: 150px;
+  padding-top: 100px;
+  position: relative;
+}
+.define-state-content {
+  position: absolute;
+  z-index: 1;
+}
+.state-box {
+  padding: 15px;
+  border-radius: 10px;
+  background-color: white;
+  position: relative;
+  margin-top: 30px;
+}
+.state-description {
+  max-width: 127px;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #c2c9d1;
+  margin: 0;
+}
+.state-dot {
+  width: 18.7px;
+  height: 18.7px;
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+.state-title {
+  display: flex;
+  justify-content: space-between;
+  width: 170px;
+  align-items: center;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+  color: #000000;
+  margin: 0;
+}
+.state-value {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 10px 0 0;
+}
+.state-approve .state-dot {
+  background-color: #3cc13b;
+}
+.state-approve .state-value {
+  color: #3cc13b;
+}
+.state-wating .state-dot {
+  background-color: #3e66fb;
+}
+.state-wating .state-value {
+  color: #3e66fb;
+}
+.state-not-approve .state-dot {
+  background-color: #3e66fb;
+}
+.state-not-approve .state-value {
+  color: #3e66fb;
+  opacity: 0.5;
+}
+.state-line {
+  position: absolute;
+  top: 100px;
+  left: 167px;
 }
